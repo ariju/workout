@@ -1,9 +1,5 @@
-export const state = () => ({
-  loggedIn: false
-})
+import { vuexfireMutations } from 'vuexfire'
 
-export const getters = {}
-
-export const mutations = {}
-
-export const actions = {}
+export const mutations = {
+  ...vuexfireMutations
+}

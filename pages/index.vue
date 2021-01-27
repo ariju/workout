@@ -1,13 +1,15 @@
 <template>
   <div>
-    index.vue
+    index
   </div>
 </template>
 
 <script>
 export default {
-  layout ({ store }) {
-    return store.state.loggedIn ? 'default' : 'top'
-  }
+  
 }
 </script>
+
+<style scoped>
+
+</style>
