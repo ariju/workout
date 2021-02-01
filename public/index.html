@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>firebase auth テスト</title>
+  </head>
+  <body>
+    <h1>テスト用認証アプリ</h1>
+
+    <!-- メールアドレス入力フォーム -->
+    <div>
+      <label for="email">Email</label>
+      <input type="email" id="email" />
+    </div>
+
+    <!-- パスワード入力フォーム -->
+    <div>
+      <label for="password">Password</label>
+      <input type="password" id="password" />
+    </div>
+
+    <!-- ボタン -->
+    <button id="sign-up" onclick="onSignUpButtonClicked();">sign up</button>
+    <button id="sign-in" onclick="onSignInButtonClicked();">sign in</button>
+    <button id="sign-out" onclick="onSignOutButtonClicked();">sign out</button>
+
+    <!-- ユーザー情報の出力用エリア -->
+    <h2>ユーザー情報</h2>
+    <div id="userinfo"></div>
+
+    <!-- ログ出力エリア -->
+    <h2>ログ</h2>
+    <p id="log"></p>
+
+    <!-- ↓↓ ここにコピーしたスクリプトを貼り付ける ↓↓ -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.2.5/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/8.2.5/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+    <!-- ↑↑ ここにコピーしたスクリプトを貼り付ける ↑↑ -->
+    <script src="main.js"></script>
+  </body>
+</html>
